@@ -1,0 +1,127 @@
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+    color: rgb(253, 185, 39);
+    position: absolute;
+    top: 20vw;
+    left: 8vw;
+}
+
+#title-2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: rgb(253, 185, 39);
+    position: absolute;
+    top: 27vw;
+    left: 14vw;
+}
+
+#image{
+    width: 100%;
+    height: auto;
+}
+
+#main{
+    background-color: rgb(85,37, 130);
+    padding: 0;
+    margin: 0;
+}
+
+#img-caption{
+    color: white;
+    font-size: 25px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    width: 45%;
+    padding: 30px;
+    text-align: center;
+}
+
+#img-caption-2{
+    color: rgb(253, 185, 39);
+    font-size: 25px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    width: 45%;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+hr{
+    color: white;
+    margin: auto;
+    width: 70%;
+}
+
+#tribute-link{
+    color: rgb(253, 185, 39);
+}
+
+#article-title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(253, 185, 39);
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    font-size: 40px;
+    text-align: center;
+}
+
+#tribute-info{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    font-size: 20px;
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: auto;
+    width: 50%;
+    font-size: 20px;
+    padding: 4px;
+}
+
+#article-footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    font-size: 15px;
+    text-align: center;
+}
+
+#tribute-final{
+    background-color: rgb(253, 185, 39);
+}
+
+#tribute-final-title{
+    color: rgb(85,37, 130);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+    font-size: 40px;
+}
+
+#tribute-final-title-2{
+    color: rgb(85,37, 130);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 40px;
+    width: 60vw;
+    height: 35vw;
+}
