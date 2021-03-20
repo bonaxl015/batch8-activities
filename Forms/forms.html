@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Thai Me Up Restaurant Survey Form</h1>
+        <p id="description">Please fill up the form and give us your feedback. Your feedback is important to us.</p>
+    
+        <form id="survey-form">
+            <label class="survey-header" id="name-label" for="name">Name
+                <br>
+                <input id="name" type="text" name="name" placeholder="Name">
+            </label>
+            <br>
+            <label class="survey-header" id="email-label" for="email">Email
+                <br>
+                <input id="email" type="email" name="email" placeholder="Email">
+            </label>
+            <br>
+            <label class="survey-header" id="number-label" for="number">Mobile Number
+                <br>
+                <input id="number" type="number" name="number" placeholder="Mobile No.">
+            </label>
+            <br>
+            <label class="survey-header" id="dropdown-label" for="food">Choose your favorite food
+                <br>
+                <select id="dropdown" name="food" aria-placeholder="Select drink">
+                    <option id="food" value=""></option>
+                    <option id="food" value="Pad Kra Prao">Pad Kra Prao</option>
+                    <option id="food" value="Kao Ka Moo">Kao Ka Moo</option>
+                    <option id="food" value="Pad Woon Sen">Pad Woon Sen</option>
+                    <option id="food" value="Massaman Curry">Massaman Curry</option>
+                    <option id="food" value="Yam Nua">Yam Nua</option>
+                </select>
+            </label>
+            <br>
+            <label class="survey-header" id="drink-sel">Choose you favorite drink:
+                <br>
+                <input type="radio" name="drinks" id="nam_achan">
+                <label for="nam_achan" id="drinks">Nam Achan</label>
+                <br>
+                <input type="radio" name="drinks" id="o_liang">
+                <label for="o_liang" id="drinks">O-liang</label>
+                <br>
+                <input type="radio" name="drinks" id="cha_yen">
+                <label for="cha_yen" id="drinks">Cha Yen</label>
+                <br>
+                <input type="radio" name="drinks" id="cha_manao">
+                <label for="cha_manao" id="drinks">Cha Manao</label>
+                <br>
+                <input type="radio" name="drinks" id="nam_matoom">
+                <label for="nam_matoom" id="drinks">Nam Matoom</label>
+            </label>
+            <br>
+            <br>
+            <label class="survey-header" for="suggestion">Suggestions and Feedbacks:
+                <br>
+                <textarea name="suggestion" id="suggestion" placeholder="Enter your feedbacks and suggestions here"></textarea>
+            </label>
+            <br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
