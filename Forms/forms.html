@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="container">
+        <img id="logo" src="images/logo.jpg">
         <h1 id="title">Thai Me Up Restaurant Survey Form</h1>
         <p id="description">Please fill up the form and give us your feedback. Your feedback is important to us.</p>
     
@@ -30,33 +31,48 @@
             <br>
             <label class="survey-header" id="dropdown-label" for="food">Choose your favorite food
                 <br>
-                <select id="dropdown" name="food" aria-placeholder="Select drink">
-                    <option id="food" value=""></option>
-                    <option id="food" value="Pad Kra Prao">Pad Kra Prao</option>
-                    <option id="food" value="Kao Ka Moo">Kao Ka Moo</option>
-                    <option id="food" value="Pad Woon Sen">Pad Woon Sen</option>
-                    <option id="food" value="Massaman Curry">Massaman Curry</option>
-                    <option id="food" value="Yam Nua">Yam Nua</option>
+                <select id="dropdown" name="food" placeholder="Select drink">
+                    <option value=""></option>
+                    <option value="Pad Kra Prao">Pad Kra Prao</option>
+                    <option value="Kao Ka Moo">Kao Ka Moo</option>
+                    <option value="Pad Woon Sen">Pad Woon Sen</option>
+                    <option value="Massaman Curry">Massaman Curry</option>
+                    <option value="Yam Nua">Yam Nua</option>
                 </select>
             </label>
             <br>
-            <label class="survey-header" id="drink-sel">Choose you favorite drink:
-                <br>
-                <input type="radio" name="drinks" id="nam_achan">
-                <label for="nam_achan" id="drinks">Nam Achan</label>
-                <br>
-                <input type="radio" name="drinks" id="o_liang">
-                <label for="o_liang" id="drinks">O-liang</label>
-                <br>
-                <input type="radio" name="drinks" id="cha_yen">
-                <label for="cha_yen" id="drinks">Cha Yen</label>
-                <br>
-                <input type="radio" name="drinks" id="cha_manao">
-                <label for="cha_manao" id="drinks">Cha Manao</label>
-                <br>
-                <input type="radio" name="drinks" id="nam_matoom">
-                <label for="nam_matoom" id="drinks">Nam Matoom</label>
-            </label>
+            <p class="survey-header" id="drink-sel">Choose your favorite drink:</p>
+                <div id="selection-container">
+                    <input type="radio" name="drinks" id="nam-achan">
+                    <label for="nam-achan">Nam Achan</label>
+                    <br>
+                    <input type="radio" name="drinks" id="o-liang">
+                    <label for="o-liang">O-liang</label>
+                    <br>
+                    <input type="radio" name="drinks" id="cha-yen">
+                    <label for="cha-yen">Cha Yen</label>
+                    <br>
+                    <input type="radio" name="drinks" id="cha-manao">
+                    <label for="cha-manao">Cha Manao</label>
+                    <br>
+                    <input type="radio" name="drinks" id="nam-matoom">
+                    <label for="nam-matoom">Nam Matoom</label>
+                </div>
+            <br>
+            <p class="survey-header" id="sides">Choose your favorite side dish/es:</p>
+                <div id="selection-container">
+                    <input type="checkbox" name="side-dish" id="green-papaya-salad">
+                    <label for="green-papaya-salad">Green Papaya Salad</label>
+                    <br>
+                    <input type="checkbox" name="side-dish" id="thai-cucumber-salad">
+                    <label for="thai-cucumber-salad">Thai Cucumber Salad</label>
+                    <br>
+                    <input type="checkbox" name="side-dish" id="spicy-thai-salad">
+                    <label for="spicy-thai-salad">Spicy Thai Salad</label>
+                    <br>
+                    <input type="checkbox" name="side-dish" id="thai-peanut-slaw">
+                    <label for="thai-peanut-slaw">Thai Peanut Slaw</label>
+                </div>
             <br>
             <br>
             <label class="survey-header" for="suggestion">Suggestions and Feedbacks:
