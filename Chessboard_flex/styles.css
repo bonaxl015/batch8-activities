@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#title{
+    font-family: 'Creepster', cursive;
+    color: #63C328;
+    font-size: 70px;
+    margin-top: 5%;
+    background-color: brown;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body{
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: 40vw;
+    justify-self: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.light-box{
+    display: flex;
+    background-color: orange;
+    width: 12.5%;
+    height: 12.5%;
+    align-content: center;
+    justify-content: center;
+}
+
+.dark-box{
+    display: flex;
+    background-color: black;
+    width: 12.5%;
+    height: 12.5%;
+    align-content: center;
+    justify-content: center;
+}
+
+#pawn-b1, #pawn-b2, #pawn-b3, #pawn-b4,
+#pawn-b5, #pawn-b6, #pawn-b7, #pawn-b8,
+#rook-b1, #rook-b2, #bishop-b1, #bishop-b2,
+#knight-b1, #knight-b2, #king-b1, #queen-b1,
+#pawn-w1, #pawn-w2, #pawn-w3, #pawn-w4,
+#pawn-w5, #pawn-w6, #pawn-w7, #pawn-w8,
+#rook-w1, #rook-w2, #bishop-w1, #bishop-w2,
+#knight-w1, #knight-w2, #king-w1, #queen-w1{
+    width: 50%;
+    height: auto;
+}
+
