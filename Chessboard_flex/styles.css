@@ -12,7 +12,7 @@ html{
 #title{
     font-family: 'Creepster', cursive;
     color: #63C328;
-    font-size: 70px;
+    font-size: 5vw;
     margin-top: 5%;
     background-color: brown;
     padding-left: 15px;
@@ -37,7 +37,7 @@ body{
     height: 40vw;
     justify-self: center;
     margin-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 3vw;
 }
 
 .light-box{
