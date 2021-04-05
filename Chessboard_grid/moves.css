@@ -1,0 +1,285 @@
+/* Straight movements */
+
+/* Upward movement */
+
+@keyframes move-up-1{
+    100% {transform: translateY(-5vw);}
+}
+
+@keyframes move-up-2{
+    100% {transform: translateY(-10vw);}
+}
+
+@keyframes move-up-3{
+    100% {transform: translateY(-15vw);}
+}
+
+@keyframes move-up-4{
+    100% {transform: translateY(-20vw);}
+}
+
+@keyframes move-up-5{
+    100% {transform: translateY(-25vw);}
+}
+
+@keyframes move-up-6{
+    100% {transform: translateY(-30vw);}
+}
+
+@keyframes move-up-7{
+    100% {transform: translateY(-35vw);}
+}
+
+/* Downward movement */
+
+@keyframes move-down-1{
+    100% {transform: translateY(5vw);}
+}
+
+@keyframes move-down-2{
+    100% {transform: translateY(10vw);}
+}
+
+@keyframes move-down-3{
+    100% {transform: translateY(15vw);}
+}
+
+@keyframes move-down-4{
+    100% {transform: translateY(20vw);}
+}
+
+@keyframes move-down-5{
+    100% {transform: translateY(25vw);}
+}
+
+@keyframes move-down-6{
+    100% {transform: translateY(30vw);}
+}
+
+@keyframes move-down-7{
+    100% {transform: translateY(35vw);}
+}
+
+/* Right movement */
+
+@keyframes move-right-1{
+    100% {transform: translateX(5vw);}
+}
+
+@keyframes move-right-2{
+    100% {transform: translateX(10vw);}
+}
+
+@keyframes move-right-3{
+    100% {transform: translateX(15vw);}
+}
+
+@keyframes move-right-4{
+    100% {transform: translateX(20vw);}
+}
+
+@keyframes move-right-5{
+    100% {transform: translateX(25vw);}
+}
+
+@keyframes move-right-6{
+    100% {transform: translateX(30vw);}
+}
+
+@keyframes move-right-7{
+    100% {transform: translateX(35vw);}
+}
+
+/* Left movement */
+
+@keyframes move-left-1{
+    100% {transform: translateX(-5vw);}
+}
+
+@keyframes move-left-2{
+    100% {transform: translateX(-10vw);}
+}
+
+@keyframes move-left-3{
+    100% {transform: translateX(-15vw);}
+}
+
+@keyframes move-left-4{
+    100% {transform: translateX(-20vw);}
+}
+
+@keyframes move-left-5{
+    100% {transform: translateX(-25vw);}
+}
+
+@keyframes move-left-6{
+    100% {transform: translateX(-30vw);}
+}
+
+@keyframes move-left-7{
+    100% {transform: translateX(-35vw);}
+}
+
+/* Diagonal movements */
+
+/* Up Left */
+
+@keyframes move-up-left-1{
+    100% {transform: translate(-5vw, -5vw);}
+}
+
+@keyframes move-up-left-2{
+    100% {transform: translate(-10vw, -10vw);}
+}
+
+@keyframes move-up-left-3{
+    100% {transform: translate(-15vw, -15vw);}
+}
+
+@keyframes move-up-left-4{
+    100% {transform: translate(-20vw, -20vw);}
+}
+
+@keyframes move-up-left-5{
+    100% {transform: translate(-25vw, -25vw);}
+}
+
+@keyframes move-up-left-6{
+    100% {transform: translate(-30vw, -30vw);}
+}
+
+@keyframes move-up-left-7{
+    100% {transform: translate(-35vw, -35vw);}
+}
+
+/* Up Right */
+
+@keyframes move-up-right-1{
+    100% {transform: translate(5vw, -5vw);}
+}
+
+@keyframes move-up-right-2{
+    100% {transform: translate(10vw, -10vw);}
+}
+
+@keyframes move-up-right-3{
+    100% {transform: translate(15vw, -15vw);}
+}
+
+@keyframes move-up-right-4{
+    100% {transform: translate(20vw, -20vw);}
+}
+
+@keyframes move-up-right-5{
+    100% {transform: translate(25vw, -25vw);}
+}
+
+@keyframes move-up-right-6{
+    100% {transform: translate(30vw, -30vw);}
+}
+
+@keyframes move-up-right-7{
+    100% {transform: translate(35vw, -35vw);}
+}
+
+/* Down Left */
+
+@keyframes move-down-left-1{
+    100% {transform: translate(-5vw, 5vw);}
+}
+
+@keyframes move-down-left-2{
+    100% {transform: translate(-10vw, 10vw);}
+}
+
+@keyframes move-down-left-3{
+    100% {transform: translate(-15vw, 15vw);}
+}
+
+@keyframes move-down-left-4{
+    100% {transform: translate(-20vw, 20vw);}
+}
+
+@keyframes move-down-left-5{
+    100% {transform: translate(-25vw, 25vw);}
+}
+
+@keyframes move-down-left-6{
+    100% {transform: translate(-30vw, 30vw);}
+}
+
+@keyframes move-down-left-7{
+    100% {transform: translate(-35vw, 35vw);}
+}
+
+/* Down Right */
+
+@keyframes move-down-right-1{
+    100% {transform: translate(5vw, 5vw);}
+}
+
+@keyframes move-down-right-2{
+    100% {transform: translate(10vw, 10vw);}
+}
+
+@keyframes move-down-right-3{
+    100% {transform: translate(15vw, 15vw);}
+}
+
+@keyframes move-down-right-4{
+    100% {transform: translate(20vw, 20vw);}
+}
+
+@keyframes move-down-right-5{
+    100% {transform: translate(25vw, 25vw);}
+}
+
+@keyframes move-down-right-6{
+    100% {transform: translate(30vw, 30vw);}
+}
+
+@keyframes move-down-right-7{
+    100% {transform: translate(35vw, 35vw);}
+}
+
+/* Knight moves */
+
+@keyframes move-up-right-short{
+    33% {transform: translate(10vw, 0);}
+    100% {transform: translate(10vw, 5vw);}
+}
+
+@keyframes move-up-right-long{
+    33% {transform: translate(5vw, 0);}
+    100% {transform: translate(5vw, 10vw);}
+}
+
+@keyframes move-up-left-short{
+    33% {transform: translate(-10vw, 0);}
+    100% {transform: translate(-10vw, -5vw);}
+}
+
+@keyframes move-up-left-long{
+    33% {transform: translate(-5vw, 0);}
+    100% {transform: translate(-5vw, -10vw);}
+}
+
+@keyframes move-down-right-short{
+    33% {transform: translate(10vw, 0);}
+    100% {transform: translate(10vw, 5vw);}
+}
+
+@keyframes move-down-right-long{
+    33% {transform: translate(5vw, 0);}
+    100% {transform: translate(5vw, 10vw);}
+}
+
+@keyframes move-down-left-short{
+    33% {transform: translate(-10vw, 0);}
+    100% {transform: translate(-10vw, 5vw);}
+}
+
+@keyframes move-down-left-long{
+    33% {transform: translate(-5vw, 0);}
+    100% {transform: translate(-5vw, 10vw);}
+}

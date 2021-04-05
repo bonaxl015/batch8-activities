@@ -1,0 +1,140 @@
+@import "moves.css";
+@import "animation.css";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-image: url("images/queen_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+a{
+    font-size: 3vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF;
+}
+
+span{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.video-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25vh);
+    opacity: 0;;
+}
+
+.intro-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Button style */
+.btn{
+    padding: 0.4vw 3vw;
+    border-radius: 0.4vw;
+}
+
+.btn-start{
+    transform: translate(-50%, 25vh);
+    background-color: #41d32e;
+}
+
+.btn-quit{
+    background-color: red;
+}
+
+.name-1{
+    color: red;
+}
+
+.name-2{
+    background-color: red;
+    border-radius: 0.4vw;
+    padding: 0.3vw;
+    color: #000;
+}
+
+.grid{
+    display: grid;
+}
+
+.layout-container{
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 20vw;
+    height: auto;
+}
+
+.chess-container{
+    padding-top: 8vh;
+}
+
+.button-container{
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container{
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.name-container{
+    text-align: center;
+}
+
+.chessboard{
+    grid-template: repeat(8, 12.5%) / repeat(8, 12.5%);
+    width: 40vw;
+    height: 40vw;
+    margin-left: auto;
+    margin-right: 2vw;
+}
+
+.light-box{
+    display: grid;
+    grid-template: 100% / 100%;
+    background-color: #FFFFFF;
+}
+
+.dark-box{
+    display: grid;
+    grid-template: 100% / 100%;
+    background-color: #FF4040;
+}
+
+.chess-piece{
+    width: auto;
+    height: 100%;
+    align-self: end;
+    justify-self: center;
+}

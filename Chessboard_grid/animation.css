@@ -1,0 +1,94 @@
+/* Start button animation */
+@keyframes btn-appear{
+    100% {opacity: 1;}
+}
+
+.video-container a{
+    animation: btn-appear 0.3s ease-in 14s forwards;
+}
+
+/* Quit button animation */
+@keyframes press-quit{
+    100% {
+        background-color: darkred;
+        transform: scale(1.05);
+    }
+}
+
+.btn-quit:hover{
+    animation: press-quit 0.1s linear forwards;
+}
+
+/* White moves */
+
+.pawn-w1{
+    animation: move-up-2 1s ease-in 2s forwards;
+}
+
+.pawn-w8{
+
+    animation: move-up-2 1s ease-in 4s forwards;
+}
+
+.rook-w1{
+    animation: move-up-2 1s ease-in 6s forwards;
+}
+
+.rook-w2{
+    animation: move-up-2 1s ease-in 8s forwards;
+}
+
+.pawn-w3{
+    animation: move-up-2 1s ease-in 10s forwards;
+}
+
+.pawn-w4{
+    animation: move-up-1 1s ease-in 12s forwards;
+}
+
+.pawn-w5{
+    animation: move-up-1 1s ease-in 14s forwards;
+}
+
+.pawn-w6{
+    animation: move-up-2 1s ease-in 15s forwards;
+}
+
+/* Black moves */
+
+.pawn-b1{
+    animation: move-down-2 1s ease-in 3s forwards;
+}
+
+.pawn-b8{
+    animation: move-down-2 1s ease-in 5s forwards;
+}
+
+.rook-b1{
+    animation: move-down-2 1s ease-in 7s forwards;
+}
+
+.rook-b2{
+    animation: move-down-2 1s ease-in 9s forwards;
+}
+
+.knight-b1{
+    animation: move-down-right-long 1s ease-in 11s forwards;
+}
+
+.knight-b2{
+    animation: move-down-left-long 1s ease-in 13s forwards;
+}
+
+@keyframes hide{
+    100% {opacity: 0}
+}
+
+.pawn-b3,
+.pawn-b4,
+.pawn-b5,
+.pawn-b6,
+.knight-w1,
+.knight-w2{
+    animation: hide 1s ease-in 16s forwards;
+}

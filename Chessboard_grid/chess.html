@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="moves.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Check Mate</title>
+    <link rel="icon" href="images/chessboard_logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="grid layout-container">
+        
+        <div class="icon-container">
+            <div class="logo-container grid">
+                <img class="logo" src="images/chessboard_logo.png" alt="Check Mate Logo">
+            </div>
+            <div class="name-container">
+                <span class="name-1">Check</span>
+                <span class="name-2">Mate</span>
+            </div>
+            <div class="button-container grid">
+                <a class="btn btn-quit" href="index.html">Quit</a>
+            </div>
+        </div>
+
+        <div class="chess-container">
+            <div class="grid chessboard">
+                <!-- row 1 -->
+                <div class="light-box">
+                    <img src="chess_piece/rook_b.png" class="chess-piece rook-b1">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/knight_b.png" class="chess-piece knight-b1">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/bishop_b.png" class="chess-piece bishop-b1">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/queen_b.png" class="chess-piece queen-b1">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/king_b.png" class="chess-piece king-b1">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/bishop_b.png" class="chess-piece bishop-b2">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/knight_b.png" class="chess-piece knight-b2">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/rook_b.png" class="chess-piece rook-b2">
+                </div>
+
+                <!-- row 2 -->
+                <div class="dark-box">
+                    <img src="chess_piece/pawn_b.png" class="chess-piece pawn-b1">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/pawn_b.png" class="chess-piece pawn-b2">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/pawn_b.png" class="chess-piece pawn-b3">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/pawn_b.png" class="chess-piece pawn-b4">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/pawn_b.png" class="chess-piece pawn-b5">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/pawn_b.png" class="chess-piece pawn-b6">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/pawn_b.png" class="chess-piece pawn-b7">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/pawn_b.png" class="chess-piece pawn-b8">
+                </div>
+                
+                <!-- row 3 -->
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+
+                <!-- row 4 -->
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+
+                <!-- row 5 -->
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+
+                <!-- row 6 -->
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+                <div class="dark-box"></div>
+                <div class="light-box"></div>
+
+                <!-- row 7 -->
+                <div class="light-box">
+                    <img src="chess_piece/pawn_w.png" class="chess-piece pawn-w1">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/pawn_w.png" class="chess-piece pawn-w2">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/pawn_w.png" class="chess-piece pawn-w3">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/pawn_w.png" class="chess-piece pawn-w4">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/pawn_w.png" class="chess-piece pawn-w5">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/pawn_w.png" class="chess-piece pawn-w6">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/pawn_w.png" class="chess-piece pawn-w7">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/pawn_w.png" class="chess-piece pawn-w8">
+                </div>
+
+                <!-- row 8 -->
+                <div class="dark-box">
+                    <img src="chess_piece/rook_w.png" class="chess-piece rook-w1">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/knight_w.png" class="chess-piece knight-w1">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/bishop_w.png" class="chess-piece bishop-w1">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/queen_w.png" class="chess-piece queen-w1">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/king_w.png" class="chess-piece king-w1">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/bishop_w.png" class="chess-piece bishop-w2">
+                </div>
+                <div class="dark-box">
+                    <img src="chess_piece/knight_w.png" class="chess-piece knight-w2">
+                </div>
+                <div class="light-box">
+                    <img src="chess_piece/rook_w.png" class="chess-piece rook-w2">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
