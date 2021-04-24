@@ -1,0 +1,243 @@
+:root{
+    --white: #FFF;
+    --black: #000;
+    --blue-button: #0275d8;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body{
+    position: relative;
+    font-family: sans-serif;
+    height: 100vh;
+    color: var(--white);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url("../bg/image-13.jpg");
+}
+
+.momentum-container{
+    flex-direction: column;
+}
+
+#time{
+    font-size: 7rem;
+    margin-top: 8rem;
+}
+
+h1{
+    margin-bottom: 3rem;
+}
+
+h2{
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+h3{
+    margin-top: 10rem;
+}
+
+#focus, #name, #edit-quote{
+    border-bottom: 2px var(--white) solid;
+}
+
+#quote{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#change-quote{
+    margin-top: 1.5rem;
+}
+
+.todo-container{
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    visibility: hidden;
+}
+
+.todo{
+    height: auto;
+    width: 380px;
+}
+
+.card{
+    background-color: var(--black);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--white);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-toggle{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px 20px;
+}
+
+#background{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 10px 20px;
+}
+
+.header-container{
+    height: 4rem;
+}
+
+.todo-header{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.input-container input{
+    font-size: 1rem;
+    border: 0;
+    outline: none;
+    width: 70%;
+    padding: 0.5rem 0.5rem;
+    background-color: var(--white);
+    margin-top: 1rem;
+    border-radius: 25px;
+}
+
+.add-button{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    height: 1.6rem;
+    width: 3rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.item-container{
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.item{
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px var(--white) solid;
+}
+
+.item-input{
+    background: none;
+    outline: none;
+    border: none;
+    width: 64%;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.edit-button{
+    font-size: 1rem;
+    margin: 0 0.25rem;
+    background: none;
+    outline: none;
+    border: none;
+    color: lime;
+    cursor: pointer;
+}
+
+.remove-button{
+    font-size: 1rem;
+    margin: 0 0.25rem;
+    background: none;
+    outline: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    #time{
+        font-size: 5.5rem;
+    }
+}
+
+@media (max-width: 460px){
+    #time{
+        font-size: 3.5rem;
+    }
+
+    h1{
+        margin-top: 1rem;
+        font-size: 1.8rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+    h3{
+        margin-top: 5rem;
+    }
+
+    h3 span{
+        font-size: 1.1rem;
+    }
+
+    .todo-toggle, #background, #change-quote{
+        font-size: 1rem;
+    }
+
+    .todo{
+        width: 300px;
+    }
+}
+
+@media (max-width: 340px){
+    #time{
+        font-size: 3rem;
+    }
+
+    h1{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    h3{
+        margin-top: 5rem;
+    }
+
+    h3 span{
+        font-size: 1.05rem;
+    }
+
+    .todo-toggle, #background, #change-quote{
+        font-size: 0.8rem;
+    }
+
+    .todo{
+        width: 260px;
+    }
+
+    .item-input{
+        width: 50%;
+    }
+}
