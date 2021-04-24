@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="momentum-container flex">
+        <time id="time"></time>
+        <h1>
+            <span id="greeting"></span>
+            <span id="name" contenteditable="true"></span>
+        </h1>
+
+        <h2>What is your focus for today?</h2>
+        <h2 id="focus" contenteditable="true"></h2>
+
+        <h3 id="quote">
+            <span>"</span>
+            <span id="edit-quote" contenteditable="true"></span>
+            <span>"</span>
+        </h3>
+
+        <span id="change-quote">Change Quote</span>
+
+        <div class="todo-container">
+            <div class="todo card">
+                <div class="header-container flex">
+                    <h2><span class="todo-header">To Do List</span></h2>
+                </div>
+                <div class="input-container flex">
+                    <input type="text" class="input" placeholder="Add new to do">
+                    <button class="add-button">Add</button>
+                </div>
+                <div class="item-container flex"></div>
+            </div>
+        </div>
+        <span class="todo-toggle">To Do</span>
+        <span id="background">Change Background</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script/main.js"></script>
+    <script src="script/add-todo.js"></script>
+</body>
+</html>
