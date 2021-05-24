@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxBank | Sign In</title>
+    <link rel="icon" href="MaxBank-logo/default.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="main-container flex">
+        <div class="logo-container flex">
+            <img class="logo" src="MaxBank-logo/vector/default-monochrome.svg" alt="MaxBank Logo">
+        </div>
+        <div class="login-container card flex">
+            <div class="login-text-container flex">
+                <h2 class="login-text">Sign in to MaxBank</h2>
+            </div>
+            <form action="load-data.html" method="GET" id="form" class="flex">
+                <div class="form-container flex">
+                    <input id="employee-number" type="number" name="employee-number" placeholder="Employee Number" required>
+                    <input id="password" type="password" name="password" placeholder="Password">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="error flex"></div>
+        <div class="no-account-container flex">
+            <span class="no-account">No account yet?</span>
+            <span class="sign-up"><a href="sign-up.html">Sign up</a></span>
+        </div>
+    </div>
+    <script src="javascript/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxBank | User Accounts</title>
+    <link rel="icon" href="MaxBank-logo/default.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/user-accounts.css">
+</head>
+<body>
+    <div class="main-container flex">
+        <div class="logo-container flex">
+            <img src="MaxBank-logo/vector/default-monochrome.svg" alt="MaxBank logo">
+            <div class="toolbar-title flex">
+                <a href="dashboard.html"><h2 class="dashboard-text">Dashboard</h2></a>
+                <a href="user-accounts.html"><h2 class="user-account">Manage Accounts</h2></a>
+                <!-- <a href="budget-tracking.html"><h2 class="budget-tracker">Budget Tracker</h2></a> -->
+                <a href="login.html"><h2 class="logout">Log Out</h2></a>
+            </div>
+        </div>
+        <div class="user-container flex">
+            <div class="all-user-container flex card">
+                <div class="user-toolbar-container flex">
+                    <div class="user-search-container flex">
+                        <input id="search" type="text" name="search" placeholder="Search">
+                    </div>
+                        <button class="add-user">Add New User</button>
+                        <button class="check-balance">Check Balance</button>
+                </div>
+                <div class="header-container flex">
+                    <div class="header-account-name flex">
+                        <span class="header-text">Account Name</span>
+                    </div>
+                    <div class="header-account-number flex">
+                        <span class="header-text">Account Number</span>
+                    </div>
+                    <div class="header-balance flex">
+                        <span class="header-text">Account Balance</span>
+                    </div>
+                    <div class="header-status flex">
+                        <span class="header-text">Status</span>
+                    </div>
+                    <div class="header-action flex">
+                        <span class="header-text">Action</span>
+                    </div>
+                </div>
+                <div class="user-list flex"></div>
+            </div>
+        </div>
+
+        <div class="add-user-container flex card">
+            <div class="add-user-text-container flex">
+                <h2 class="add-user-text">Add new account</h2>
+            </div>
+            <div class="add-user-form-container flex">
+                <input id="name" type="text" name="name" placeholder="Name" required>
+                <input id="account-number" type="number" name="account-number" placeholder="Account No." required>
+                <input id="initial-balance" type="number" name="initial-balance" placeholder="Initial Balance" required>
+                <div id="error-message"></div>
+                <div class="button-container flex">
+                    <button class="add-account">Add</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="user-balance-container flex card">
+            <div class="user-balance-text-container flex">
+                <h2 class="user-balance-text">Check Balance</h2>
+            </div>
+            <div class="user-balance-form-container flex">
+                <input id="name-balance" type="text" name="name" placeholder="Enter Name" required>
+            </div>
+            <div class="button-container flex">
+                <button class="balance-ok">OK</button>
+                <button class="balance-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/user-accounts.js"></script>
+</body>
+</html>

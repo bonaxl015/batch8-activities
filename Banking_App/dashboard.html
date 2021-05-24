@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxBank | Dashboard</title>
+    <link rel="icon" href="MaxBank-logo/default.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="main-container flex">
+        <div class="logo-container flex">
+            <img src="MaxBank-logo/vector/default-monochrome.svg" alt="MaxBank logo">
+            <div class="toolbar-title flex">
+                <a href="dashboard.html"><h2 class="dashboard-text">Dashboard</h2></a>
+                <a href="user-accounts.html"><h2 class="user-account">Manage Accounts</h2></a>
+                <!-- <a href="budget-tracking.html"><h2 class="budget-tracker">Budget Tracker</h2></a> -->
+                <a href="login.html"><h2 class="logout">Log Out</h2></a>
+            </div>
+        </div>
+        <div class="status-container flex">
+            <div class="card-container flex">
+                <div class="status-card card" id="open">
+                    <div class="holder flex">
+                        <span class="open-count count"></span>
+                    </div>
+                    <div class="holder flex">
+                        <span class="status-text">Open</span>
+                    </div>
+                </div>
+                <div class="status-card card" id="approved">
+                    <div class="holder flex">
+                        <span class="approved-count count"></span>
+                    </div>
+                    <div class="holder flex">
+                        <span class="status-text">Approved</span>
+                    </div>
+                </div>
+                <div class="status-card card" id="rejected">
+                    <div class="holder flex">
+                        <span class="rejected-count count"></span>
+                    </div>
+                    <div class="holder flex">
+                        <span class="status-text">Rejected</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-container flex">
+            <div class="all-transaction-container flex card">
+                <div class="transaction-toolbar-container flex">
+                    <div class="transaction-search-container flex">
+                        <input id="search" type="text" name="search" placeholder="Search Name">
+                    </div>
+                    <div class="manual-transaction-container flex">
+                        <button class="manual-transaction">Manually Process Transaction</button>
+                    </div>
+                </div>
+                <div class="header-container flex">
+                    <div class="header-id flex">
+                        <span class="header-text">Transaction ID</span>
+                    </div>
+                    <div class="header-status flex">
+                        <span class="header-text">Status</span>
+                    </div>
+                    <div class="header-request-type flex">
+                        <span class="header-text">Request Type</span>
+                    </div>
+                    <div class="header-account-name flex">
+                        <span class="header-text">Account Name</span>
+                    </div>
+                    <div class="header-account-number flex">
+                        <span class="header-text">Account Number</span>
+                    </div>
+                    <div class="header-amount flex">
+                        <span class="header-text">Amount</span>
+                    </div>
+                    <div class="header-action flex">
+                        <span class="header-text">Action</span>
+                    </div>
+                </div>
+                <div class="transaction-list flex"></div>       
+            </div>
+        </div>
+        
+        <div class="transaction-window-container flex card">
+            <div class="transaction-details flex">
+                <div class="details-title">Transaction Details</div>
+                <div class="details flex">
+                    <div class="category flex">Transaction ID:</div>
+                    <div class="user-data flex" id="transaction-id"></div>
+                </div>
+                <div class="details flex">
+                    <div class="category flex">Request Type:</div>
+                    <div class="user-data flex" id="request-type"></div>
+                </div>
+                <div class="details flex">
+                    <div class="category flex">Account Name:</div>
+                    <div class="user-data flex" id="account-name"></div>
+                </div>
+                <div class="details flex">
+                    <div class="category flex" id="orig-account-header"></div>
+                    <div class="user-data flex" id="orig-account"></div>
+                </div>
+                <div class="details flex" id="dest-container">
+                    <div class="category flex" id="dest-account-header"></div>
+                    <div class="user-data flex" id="dest-account"></div>
+                </div>
+                <div class="details flex">
+                    <div class="category flex">Transaction Amount:</div>
+                    <div class="user-data flex" id="amount-transaction"></div>
+                </div>
+                <div class="details flex">
+                    <button class="ok" id="auto-ok">OK</button>
+                    <button class="cancel" id="auto-cancel">CANCEL</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="manual-container flex card">
+            <div class="manual-text-container flex">
+                <h2 class="manual-text">Manual Transaction</h2>
+            </div>
+            <div class="manual-form-container flex">
+                <select id="dropdown" name="transaction-type" placeholder="Select Transaction">
+                    <option value="Select">Select Transaction</option>
+                    <option value="Deposit">Deposit</option>
+                    <option value="Withdrawal">Withdrawal</option>
+                    <option value="Transfer">Transfer</option>
+                </select>
+                <input id="name" type="text" name="name" placeholder="Name" required>
+                <input id="originating-account" type="number" name="originating-account" placeholder="Originating Account" required>
+                <input id="destination-account" type="text" name="destination-account" placeholder="Receiver's Name">
+                <input id="amount" type="number" name="amount" placeholder="Enter Amount" required>
+                <div class="manual-button flex">
+                    <button class="ok" id="manual-ok">OK</button>
+                    <button class="cancel" id="manual-cancel">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/dashboard.js"></script>
+</body>
+</html>
