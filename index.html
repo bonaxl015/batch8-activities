@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity!</title>
+    <title>My Github Page</title>
+    <link rel="stylesheet" href="landing_page/css/styles.css">
 </head>
 <body>
-    <div>
-        <h1>If you think math is hard, try web design.</h1>
-        <a href="https://www.pinterest.ph/pin/285978645074070278/" target="_blank">See more</a>
+    <!-- home -->
+    <div id="home">
+        <div class="home-container flex">
+            <h2 class="intro">Introducing</h3>
+            <h1 class="name">Bon Axl Feeser's</h1>
+            <h2 class="intro">Github Page</h3>
+            <div class="button-container flex">
+                <span class="learn-more"><a href="#about">Learn More</a></span>
+                <span class="view-portfolio"><a href="#portfolio">Portfolio</a></span>
+            </div>
+        </div>
     </div>
+    <!-- portfolio section  -->
+    <div id="portfolio">
+        <div class="portfolio-container flex">
+            <div class="project-text-container flex">
+                <h2 class="title">My Projects</h2>
+            </div>
+            <div class="project-list-container flex">
+                <div class="htmlcssonly flex">
+                    <h3 class="category">HTML + CSS Only</h3>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Assignment_1/index.html" target="_blank">Programming Best Practices</a>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Activity/index.html" target="_blank">Programming Quotes</a>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Activity_2/letter.html" target="_blank">Letter Using HTML</a>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Tribute_Page/tribute.html" target="_blank">Kobe Bryant's Tribute Page</a>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Forms/forms.html" target="_blank">Thai Me Up Restaurant Feedback Form</a>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Chessboard_flex/board.html" target="_blank">Haloween Themed Chessboard Using Flex</a>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Chessboard_grid/chess.html" target="_blank">Chessboard Using Grid With CSS Animation</a>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Product_Landing_Page/index.html" target="_blank">Product Landing Page: Ripple</a>
+                </div>
+                <div class="htmlcssjavascript flex">
+                    <h3 class="category">HTML + CSS + JavaScript</h3>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Momentum_Page/index.html" target="_blank">Momentum Page</a>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/TicTacToe/index.html" target="_blank">Tic Tac Toe!</a>
+                    <a class="projects" href="https://bonaxl015.github.io/batch8-activities/Banking_App/login.html" target="_blank">Banking Application</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about me section -->
+    <section id="about">
+        <div class="about-container flex">
+            <div class="about-title-container flex">
+                <h2 class="about-title">About me</h2>
+            </div>
+            <div class="about-body-container flex">
+                <div class="image-div flex">
+                    <img src="landing_page/images/Bon_img.jpg" alt="Bon's Photo" class="profile-pic">
+                </div>
+                <div class="about-div flex">
+                    <p class="about-me">Bon Axl is an Electronics Engineering graduate at Pamantasan ng Lungsod ng Maynila.
+                        He's currently studying web development at Avion School to develop his skills in web development. His
+                        high interest in programming drives him to pursue software engineering career.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
