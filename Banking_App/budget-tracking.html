@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxBank | Budget Tracker</title>
+    <link rel="icon" href="MaxBank-logo/default.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/budget-tracking.css">
+</head>
+<body>
+    <div class="main-container flex">
+        <div class="logo-container flex">
+            <img src="MaxBank-logo/vector/default-monochrome.svg" alt="MaxBank logo">
+            <div class="toolbar-title flex">
+                <a href="dashboard.html"><h2 class="dashboard-text">Dashboard</h2></a>
+                <a href="user-accounts.html"><h2 class="user-account">Manage Accounts</h2></a>
+                <a href="budget-tracking.html"><h2 class="budget-tracker">Budget Tracker</h2></a>
+                <a href="login.html"><h2 class="logout">Log Out</h2></a>
+            </div>
+        </div>
+        <div class="user-profile-container flex">
+            <div class="profile-container flex card">
+                <div class="image-container flex">
+                    <img id="profile-pic" src="icons/profile.png" alt="profile picture">
+                </div>
+                <div class="user-name flex"></div>
+            </div>
+            <div class="all-info-container flex card">
+                <div class="basic-info-container flex">
+                    <div class="info-container flex">
+                        <div class="info flex">Employee No.:</div>
+                        <div class="info-emp-no flex"></div>
+                    </div>
+                    <div class="info-container flex">
+                        <div class="info flex">Name:</div>
+                        <div class="info-name flex"></div>
+                    </div>
+                    <div class="info-container flex">
+                        <div class="info flex">Email:</div>
+                        <div class="info-email flex"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="balance-container flex card">
+                <div class="balance flex"></div>
+                <div class="balance-text flex">Account Balance</div>
+            </div>
+        </div>
+        <div class="expense-container flex">
+            <div class="all-expense-container flex card">
+                <div class="expense-toolbar-container flex">
+                    <button class="add-expense">Add New Expense</button>
+                </div>
+                <div class="header-container flex">
+                    <div class="header-expense flex">
+                        <span class="header-text">Expense</span>
+                    </div>
+                    <div class="header-cost flex">
+                        <span class="header-text">Cost</span>
+                    </div>
+                    <div class="header-owner flex">
+                        <span class="header-text">Owner</span>
+                    </div>
+                    <div class="header-action flex">
+                        <span class="header-text">Action</span>
+                    </div>
+                </div>
+                <div class="expense-list flex"></div>
+            </div>
+        </div>
+
+        <div class="add-expense-container flex card">
+            <div class="add-expense-text-container flex">
+                <h2 class="add-expense-text">Add new expense</h2>
+            </div>
+            <div class="add-expense-form-container flex">
+                <input id="expense" type="text" name="expense" placeholder="Expenses" required>
+                <input id="cost" type="number" name="cost" placeholder="Cost" required>
+                <div class="button-container flex">
+                    <button class="add">Add</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/budget-tracking.js"></script>
+</body>
+</html>
