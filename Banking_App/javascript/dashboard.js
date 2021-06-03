@@ -482,7 +482,7 @@ function deposit(accountName, amount){
                 newBalance = parseInt(retrieveUserData[i].balance) + parseInt(amount);
                 retrieveUserData[i].balance = newBalance.toString();
                 localStorage.setItem('userData', JSON.stringify(retrieveUserData));
-                alert('Success! \r\n' + retrieveUserData[i].name + ' balance: Php ' + retrieveUserData[i].balance);
+                alert('Success! \r\n' + retrieveUserData[i].name + ' balance: ₱ ' + retrieveUserData[i].balance);
             }else{
                 alert('Deposit amount cannot be negative.');
             }
@@ -500,7 +500,7 @@ function withdraw(accountName, amount){
                     newBalance = parseInt(retrieveUserData[i].balance) - parseInt(amount);
                     retrieveUserData[i].balance = newBalance.toString();
                     localStorage.setItem('userData', JSON.stringify(retrieveUserData));
-                    alert(retrieveUserData[i].name + ' balance: Php ' + retrieveUserData[i].balance);
+                    alert(retrieveUserData[i].name + ' balance: ₱ ' + retrieveUserData[i].balance);
                 }
                 else{
                     alert('Balance is insufficient for withdrawal.');
@@ -526,7 +526,7 @@ function transfer(origAccount, destAccount, amount){
                             retrieveUserData[i].balance = newOrigBalance.toString();
                             retrieveUserData[j].balance = newDestBalance.toString();
                             localStorage.setItem('userData', JSON.stringify(retrieveUserData));
-                            alert(retrieveUserData[i].name + ' balance: Php ' + retrieveUserData[i].balance + '\r\n' + retrieveUserData[j].name + ' balance: ' + retrieveUserData[j].balance);
+                            alert(retrieveUserData[i].name + ' balance: ₱ ' + retrieveUserData[i].balance + '\r\n' + retrieveUserData[j].name + ' balance: ₱' + retrieveUserData[j].balance);
                         }
                         else{
                             alert('Balance is insufficient for transfer.');

@@ -1,7 +1,7 @@
 window.onload = verifyLogin();
 
 function verifyLogin(){
-    const empNo = document.getElementById('employee-number');
+    const empNo = document.getElementById('number');
     const password = document.getElementById('password');
     const form = document.getElementById('form');
     const error = document.getElementsByClassName('error');

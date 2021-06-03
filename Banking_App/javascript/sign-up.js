@@ -1,8 +1,9 @@
 window.onload = signUp();
 
 function signUp(){
-    const empNo = document.getElementById('employee-number');
+    const empNo = document.getElementById('number');
     const name = document.getElementById('name');
+    const email = document.getElementById('email');
     const password = document.getElementById('password');
     const form = document.getElementById('form');
     const error = document.getElementsByClassName('error');
@@ -22,7 +23,7 @@ function signUp(){
         if(errorMessage.length === 0){
             let employeeData = [], retrieve = [];
             let noMatch = 0;
-            let employee = new Employee(empNo.value, name.value, password.value);
+            let employee = new User(empNo.value, name.value, email.value, password.value);
  
             if(localStorage.getItem('employeeData') == null){
                 employeeData.push(employee);
@@ -30,8 +31,8 @@ function signUp(){
             }else{
                 retrieve = JSON.parse(localStorage.getItem('employeeData'));
                 for(let element of retrieve){
-                    if(element.empNo === empNo.value){
-                        errorMessage.push('Employee number already exists. Please try another.')
+                    if(element.empNo === empNo.value || element.name === name.value){
+                        errorMessage.push('Employee already exists. Please try another.')
                     }else{
                         noMatch++;
                     }
@@ -52,10 +53,11 @@ function signUp(){
     });
 }
 
-class Employee{
-    constructor(empNo, name, password){
+class User{
+    constructor(empNo, name, email, password){
         this.empNo = empNo;
         this.name = name;
+        this.email = email;
         this.password = password;
     }
 }

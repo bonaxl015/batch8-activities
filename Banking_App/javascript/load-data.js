@@ -129,6 +129,12 @@ let allTransaction = [
 
 let allUser = [
     {
+        name: 'admin',
+        accountNumber: '0000',
+        balance: '1000',
+        status: 'Active'
+    },
+    {
         name: 'bon',
         accountNumber: '1111',
         balance: '5000',
@@ -166,6 +172,11 @@ let emptyUser = [];
 const yesButton = document.getElementsByClassName('yes');
 const noButton = document.getElementsByClassName('no');
 
+new URLSearchParams (window.location.search).forEach((item, key) => {
+    if(key === 'number'){
+        localStorage.setItem('loginData', item);
+    }
+});
 yesButton[0].addEventListener('click', ()=> {
     localStorage.setItem('transactionData', JSON.stringify(allTransaction));
     localStorage.setItem('userData', JSON.stringify(allUser));
