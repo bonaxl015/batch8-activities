@@ -1,0 +1,310 @@
+:root{
+    --white: #FFF;
+    --red: #BB051D;
+    --green: #63C328;
+    --violet: #8B008B;
+    --black: #000;
+    --blue: #6365DA;
+    --gray: #333;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: sans-serif;
+    color: var(--black);
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../background/coins.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: auto;
+    background-color: var(--white);
+    border-radius: 25px;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.logo-container{
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+img{
+    height: 60px;
+    margin-left: 100px;
+}
+
+.toolbar-title{
+    width: 620px;
+    margin-right: 100px;
+    justify-content: space-between;
+}
+
+.dashboard-text,
+.user-account,
+.budget-tracker,
+.logout{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--gray);
+}
+
+.expense-container{
+    height: auto;
+    width: 1000px;
+    margin: 40px;
+}
+
+.all-expense-container{
+    height: auto;
+    width: 800px;
+    flex-direction: column;
+}
+
+input,
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    background-color: var(--white);
+    border-bottom: 2px var(--gray) solid;
+    box-shadow: 0 0 0 1000px var(--white) inset;
+}
+
+button{
+    margin: 4px 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.add-expense, .add{
+    background-color: var(--green);
+}
+
+.expense-list{
+    margin: 5px 0;
+    flex-direction: column;
+}
+
+.expense-toolbar-container{
+    width: 90%;
+    height: 70px;
+    justify-content: flex-end;
+}
+
+.header-container, .data{
+    height: 40px;
+    width: 800px;
+}
+
+.header-container{
+    margin: 5px 0;
+}
+
+.header-text{
+    font-weight: 600;
+}
+
+.header-expense,
+.data-expense{
+    width: 240px;
+}
+
+.header-cost,
+.data-cost{
+    width: 150px;
+}
+
+.data-expense,
+.data-cost{
+    border: 0;
+    text-align: center;
+}
+
+.header-owner,
+.data-owner{
+    width: 150px;
+}
+
+.header-action{
+    width: 200px;
+}
+
+.update, .remove{
+    width: 100px;
+}
+
+.update-text{
+    cursor: pointer;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.remove-text{
+    cursor: pointer;
+    color: var(--red);
+    font-weight: 600;
+}
+
+.add-expense-container{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: auto;
+    width: 340px;
+    flex-direction: column;
+    background-color: var(--gray);
+    visibility: hidden;
+}
+
+.add-expense-text-container{
+    margin: 20px 0;
+}
+
+.add-expense-text{
+    color: var(--white);
+}
+
+.add-expense-text{
+    color: var(--white);
+    margin: 20px 0px;
+}
+
+.add-expense-form-container{
+    flex-direction: column;
+}
+
+#expense, #cost{
+    border: 0;
+    margin-bottom: 20px;
+    color: var(--white);
+    padding: 10px 20px;
+    outline: none;
+    -webkit-text-fill-color: var(--white);
+    border-bottom: 2px var(--white) solid;
+    box-shadow: 0 0 0 1000px var(--gray) inset;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.button-container{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.cancel{
+    background-color: var(--red);
+}
+
+.user-profile-container{
+    width: 1000px;
+    height: 200px;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.profile-container{
+    height: 200px;
+    width: 200px;
+    flex-direction: column;
+}
+
+.image-container{
+    margin: 10px 0;
+}
+
+#profile-pic{
+    margin: 0;
+    height: 100px;
+    width: auto;
+}
+
+.user-name{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.all-info-container{
+    height: 200px;
+    width: 260px;
+}
+
+.basic-info-container{
+    width: 80%;
+    flex-direction: column;
+}
+
+.info-container{
+    margin: 10px 0;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.info{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.info-emp-no,
+.info-name,
+.info-email{
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.balance-container{
+    height: 200px;
+    min-width: 200px;
+    flex-direction: column;
+}
+
+.balance{
+    margin: 10px 20px;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.balance-text{
+    font-size: 1rem;
+    font-weight: 600;
+}
