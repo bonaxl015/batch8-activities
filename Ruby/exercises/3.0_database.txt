@@ -1,0 +1,11 @@
+1. Display count of all students
+select count(id) from students;
+
+2. Select all students with location in Manila
+select * from students where location = 'Manila';
+
+3. Display the average age of all students
+select avg(age) from students;
+
+4. Display all students by age in descending order
+select * from students order by age desc;
