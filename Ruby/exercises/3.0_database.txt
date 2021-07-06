@@ -1,11 +1,11 @@
 1. Display count of all students
-select count(id) from students;
+SELECT COUNT(id) FROM students;
 
 2. Select all students with location in Manila
-select * from students where location = 'Manila';
+SELECT * FROM students WHERE location = 'Manila';
 
 3. Display the average age of all students
-select avg(age) from students;
+SELECT AVG(age) FROM students;
 
 4. Display all students by age in descending order
-select * from students order by age desc;
+SELECT * FROM students ORDER BY age DESC;
